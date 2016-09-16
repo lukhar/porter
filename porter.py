@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import os
 import subprocess
@@ -33,6 +34,6 @@ if __name__ == '__main__':
             except OSError:
                 pass
 
-            print 'Copying {} to {}'.format(source_photo_path, destination_photo_path)
+            print('Copying {} to {}'.format(source_photo_path, destination_photo_path))
 
             shutil.copy(source_photo_path, destination_photo_path)
